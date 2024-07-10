@@ -55,11 +55,11 @@ public class Claims extends AppCompatActivity{
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String loginusername = btn_submit.getText().toString().trim();
-                if(loginusername.isEmpty()){
+                String userInput = text_user_input.getText().toString().trim();
+                if (userInput.isEmpty()) {
                     Toast.makeText(Claims.this, "Please Write Something", Toast.LENGTH_SHORT).show();
-                }
-                else{
+                } else {
+                    // Assuming you want to handle user input here, e.g., save it or process it
                     Toast.makeText(Claims.this, "Submitted", Toast.LENGTH_SHORT).show();
                 }
             }

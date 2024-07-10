@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDD5C0"
-    android:backgroundTint="#DE995D"
+    android:background="#E0B275"
     tools:context=".Login">
 
     <TextView
@@ -50,6 +49,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#E7B7A0"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +61,7 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#E7B7A0"
         android:text="New User"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="164dp"
+        android:backgroundTint="#E7B7A0"
         android:text="Back"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
