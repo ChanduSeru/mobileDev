@@ -9,6 +9,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Register extends AppCompatActivity {
     private EditText username_register, email_register, password_register;
     private Button btn_register, btnback;
@@ -49,12 +58,20 @@ public class Register extends AppCompatActivity {
         if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
             Toast.makeText(Register.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
         } else {
-            // Here you would typically perform registration logic, e.g., save to database
+          
+            saveUserCredentials(username, password);
+
             Toast.makeText(Register.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-            // Optionally, navigate back to login screen after registration
-            Intent intent = new Intent(Register.this, Login.class);
+
+
+            Intent intent = new Intent(Register.this, Home.class);
             startActivity(intent);
             finish();
         }
+    }
+
+
+    private void saveUserCredentials(String username, String password) {
+
     }
 }
